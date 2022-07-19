@@ -1,0 +1,535 @@
+body {
+    background-image: url(https://i.pinimg.com/564x/c3/95/36/c39536d36e6bfef901526a48a428e786.jpg);
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+
+#link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+/* Screen Phone */
+@media screen and (width:375px) {
+    #menuPrincipal {
+        width: 100%;
+        height: 60px;
+        border: 0px solid #5AFF2F;
+        border-bottom: 7px solid #5AFF2F;
+        background-color: #000000d2;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+    }
+
+    .text {
+        position: relative;
+        top: -12px;
+    }
+
+    #home {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: #5AFF2F;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #home:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgHome {
+        width: 32px;
+        height: 32px;
+        float: top;
+        position: relative;
+        top: 5px;
+    }
+
+    #pokedex {
+        width: 110px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #pokedex:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgPokedex {
+        width: 32px;
+        height: 32px;
+        float: top;
+        position: relative;
+        top: 5px;
+    }
+
+    #games {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #games:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgGames {
+        width: 32px;
+        height: 32px;
+        float: top;
+        position: relative;
+        top: 5px;
+    }
+
+    #battle {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #battle:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgBattle {
+        width: 32px;
+        height: 32px;
+        float: top;
+        position: relative;
+        top: 5px;
+    }
+
+    #menuOpcap {
+        width: 58px;
+        height: 60px;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #menuOpcap:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgMenu {
+        width: 32px;
+        height: 32px;
+        float: right;
+        position: relative;
+        top: 15px;
+        right: 5px;
+    }
+
+    #divText1 {
+        width: 300px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.452);
+        border: 2px solid transparent;
+        position: relative;
+        top: 70px;
+        left: 25px;
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+
+    #autores {
+        position: relative;
+        top: 429px;
+        text-align: center;
+    }
+}
+
+/* Screen Tablet */
+@media screen and (width:768px) {
+    #menuPrincipal {
+        width: 100%;
+        height: 60px;
+        border: 0px solid #5AFF2F;
+        border-bottom: 7px solid #5AFF2F;
+        background-color: #000000d2;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+    }
+
+    .text {
+        position: relative;
+        top: 9px;
+    }
+
+    #home {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: #5AFF2F;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #home:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgHome {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #pokedex {
+        width: 110px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #pokedex:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgPokedex {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #games {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #games:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgGames {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #battle {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #battle:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgBattle {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #menuOpcap {
+        width: 58px;
+        height: 60px;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 275px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #menuOpcap:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgMenu {
+        width: 32px;
+        height: 32px;
+        float: right;
+        position: relative;
+        top: 15px;
+        right: 10px;
+    }
+
+    #divText1 {
+        width: 700px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.452);
+        border: 2px solid transparent;
+        position: relative;
+        top: 70px;
+        left: 25px;
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+
+    #autores {
+        position: relative;
+        top: 448px;
+        text-align: center;
+    }
+}
+
+/* Desktop */
+@media screen and (width:1366px) {
+    #menuPrincipal {
+        width: 100%;
+        height: 60px;
+        border: 0px solid #5AFF2F;
+        border-bottom: 7px solid #5AFF2F;
+        background-color: #000000d2;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+    }
+
+    .text {
+        position: relative;
+        top: 9px;
+    }
+
+    #home {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: #5AFF2F;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #home:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgHome {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #pokedex {
+        width: 110px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #pokedex:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgPokedex {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #games {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #games:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgGames {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #battle {
+        width: 90px;
+        height: 60px;
+        border-right: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 35px;
+        padding-left: 3px;
+        padding-right: 3px;
+        transition: all 0.5s;
+    }
+
+    #battle:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #imgBattle {
+        width: 32px;
+        height: 32px;
+        float: left;
+        position: relative;
+        top: 15px;
+    }
+
+    #menuOpcap {
+        width: 58px;
+        height: 60px;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 864px;
+        padding-right: 3px;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    #menuOpcap:hover {
+        background-color: #5AFF2F;
+        height: 65px;
+    }
+
+    #checkbox {
+        width: 0px;
+        height: 0px;
+    }
+
+    #imgMenu {
+        width: 32px;
+        height: 32px;
+        float: right;
+        position: relative;
+        top: 15px;
+        right: 10px;
+    }
+
+    #divText1 {
+        width: 1290px;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.452);
+        border: 2px solid transparent;
+        position: relative;
+        top: 170px;
+        left: 25px;
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+
+    #autores {
+        position: relative;
+        top: 550px;
+        text-align: center;
+    }
+
+    #menuSecundario {
+        width: 1290px;
+        height: 60px;
+        border: 0px solid #5AFF2F;
+        border-bottom: 7px solid #5AFF2F;
+        background-color: #000000d2;
+        position: absolute;
+        top: -100px;
+        left: 30px;
+        display: flex;
+        text-align: center;
+    }
+}

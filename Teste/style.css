@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+}
+
+.divs {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.37);
+    transition: all 0.5s;
+}
+
+.divs:hover {
+    width: 455px;
+    height: 305px;
+}
+
+#div01 {
+    position: absolute;
+    left: 275px;
+    top: 10px;
+    background-color: chartreuse;
+}
+
+#div02 {
+    position: absolute;
+    left: 750px;
+    top: 10px;
+    background-color: cyan;
+}
+
+#div03 {
+    position: absolute;
+    left: 275px;
+    bottom: 10px;
+    background-color: deeppink;
+}
+
+#div04 {
+    position: absolute;
+    left: 750px;
+    bottom: 10px;
+    background-color: red;
+}
