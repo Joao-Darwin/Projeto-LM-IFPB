@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.pinimg.com/564x/c3/95/36/c39536d36e6bfef901526a48a428e786.jpg);
+    background-color: aliceblue;
     color: white;
     font-family: 'Anton', sans-serif;
     font-weight: bold;
@@ -11,6 +11,11 @@ body {
     text-decoration: none;
 }
 
+.text {
+    position: relative;
+    top: -12px;
+}
+
 /* Screen Phone */
 @media screen and (width:375px) {
     #menuPrincipal {
@@ -18,17 +23,12 @@ body {
         height: 60px;
         border: 0px solid #5AFF2F;
         border-bottom: 7px solid #5AFF2F;
-        background-color: #000000d2;
+        background-color: #000000;
         position: fixed;
         top: 0px;
         left: 0px;
         display: flex;
         text-align: center;
-    }
-
-    .text {
-        position: relative;
-        top: -12px;
     }
 
     #home {
@@ -151,6 +151,11 @@ body {
         height: 65px;
     }
 
+    #checkbox {
+        width: 0px;
+        height: 0px;
+    }
+
     #imgMenu {
         width: 32px;
         height: 32px;
@@ -186,7 +191,7 @@ body {
         height: 60px;
         border: 0px solid #5AFF2F;
         border-bottom: 7px solid #5AFF2F;
-        background-color: #000000d2;
+        background-color: #000000;
         position: fixed;
         top: 0px;
         left: 0px;
@@ -319,6 +324,11 @@ body {
         height: 65px;
     }
 
+    #checkbox {
+        width: 0px;
+        height: 0px;
+    }
+
     #imgMenu {
         width: 32px;
         height: 32px;
@@ -354,12 +364,13 @@ body {
         height: 60px;
         border: 0px solid #5AFF2F;
         border-bottom: 7px solid #5AFF2F;
-        background-color: #000000d2;
+        background-color: #000000;
         position: fixed;
         top: 0px;
         left: 0px;
         display: flex;
         text-align: center;
+        z-index: 2;
     }
 
     .text {
@@ -520,7 +531,7 @@ body {
         text-align: center;
     }
 
-    #menuSecundario {
+    /* #menuSecundario {
         width: 1290px;
         height: 60px;
         border: 0px solid #5AFF2F;
@@ -531,5 +542,56 @@ body {
         left: 30px;
         display: flex;
         text-align: center;
+    } */
+
+    #objetivo {
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin: auto;
+    }
+
+    #fotoObjetivo {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        top: 110px;
+        right: 190px;
+        float: right;
+        padding: 0px;
+        object-fit: cover;
+        border: 0px solid black;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    #tituloObjetivo {
+        top: 200px;
+        font-size: 35px;
+        z-index: 1;
+    }
+
+    #tituloObjetivo:hover {
+        top: 110px;
+    }
+
+    #textObjetivo {
+        color: aliceblue;
+        font-size: 20px;
+    }
+
+    #textObjetivo:hover {
+        color: black;
+    }
+
+    .textDoObjetivo {
+        width: 800px;
+        height: 300px;
+        color: black;
+        position: relative;
+        top: 110px;
+        left: 100px;
+        text-align: center;
+        transition: all 0.5s;
     }
 }
