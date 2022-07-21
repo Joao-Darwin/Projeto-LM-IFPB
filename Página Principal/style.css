@@ -5,7 +5,7 @@ body {
     font-weight: bold;
 }
 
-#link {
+.link {
     position: relative;
     color: white;
     text-decoration: none;
@@ -13,7 +13,7 @@ body {
 
 .text {
     position: relative;
-    top: -12px;
+    top: 9px;
 }
 
 #menuPrincipal {
@@ -30,13 +30,8 @@ body {
     z-index: 2;
 }
 
-.text {
-    position: relative;
-    top: 9px;
-}
-
 #home {
-    width: 90px;
+    width: 6%;
     height: 60px;
     border-right: 2px solid white;
     background-color: #5AFF2F;
@@ -53,16 +48,8 @@ body {
     height: 65px;
 }
 
-#imgHome {
-    width: 32px;
-    height: 32px;
-    float: left;
-    position: relative;
-    top: 15px;
-}
-
-#pokedex {
-    width: 110px;
+.opcaoMenu {
+    width: 7.5%;
     height: 60px;
     border-right: 2px solid white;
     background-color: transparent;
@@ -74,64 +61,12 @@ body {
     transition: all 0.5s;
 }
 
-#pokedex:hover {
+.opcaoMenu:hover {
     background-color: #5AFF2F;
     height: 65px;
 }
 
-#imgPokedex {
-    width: 32px;
-    height: 32px;
-    float: left;
-    position: relative;
-    top: 15px;
-}
-
-#games {
-    width: 90px;
-    height: 60px;
-    border-right: 2px solid white;
-    background-color: transparent;
-    position: relative;
-    top: 0px;
-    left: 35px;
-    padding-left: 3px;
-    padding-right: 3px;
-    transition: all 0.5s;
-}
-
-#games:hover {
-    background-color: #5AFF2F;
-    height: 65px;
-}
-
-#imgGames {
-    width: 32px;
-    height: 32px;
-    float: left;
-    position: relative;
-    top: 15px;
-}
-
-#battle {
-    width: 90px;
-    height: 60px;
-    border-right: 2px solid white;
-    background-color: transparent;
-    position: relative;
-    top: 0px;
-    left: 35px;
-    padding-left: 3px;
-    padding-right: 3px;
-    transition: all 0.5s;
-}
-
-#battle:hover {
-    background-color: #5AFF2F;
-    height: 65px;
-}
-
-#imgBattle {
+.imgOpcaoMenu {
     width: 32px;
     height: 32px;
     float: left;
@@ -145,7 +80,7 @@ body {
     background-color: transparent;
     position: relative;
     top: 0px;
-    left: 864px;
+    left: 844px;
     padding-right: 3px;
     transition: all 0.5s;
     z-index: 2;
@@ -154,11 +89,6 @@ body {
 #menuOpcap:hover {
     background-color: #5AFF2F;
     height: 65px;
-}
-
-#checkbox {
-    width: 0px;
-    height: 0px;
 }
 
 #imgMenu {
@@ -187,70 +117,6 @@ body {
     top: 550px;
     text-align: center;
 }
-
-/* #menuSecundario {
-        width: 1290px;
-        height: 60px;
-        border: 0px solid #5AFF2F;
-        border-bottom: 7px solid #5AFF2F;
-        background-color: #000000d2;
-        position: absolute;
-        top: -100px;
-        left: 30px;
-        display: flex;
-        text-align: center;
-    } */
-
-/* #objetivo {
-        width: auto;
-        height: auto;
-        padding: 0px;
-        margin: auto;
-    }
-
-    #fotoObjetivo {
-        width: 250px;
-        height: 250px;
-        position: relative;
-        top: 110px;
-        right: 190px;
-        float: right;
-        padding: 0px;
-        object-fit: cover;
-        border: 0px solid black;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px black;
-    }
-
-    #tituloObjetivo {
-        top: 200px;
-        font-size: 35px;
-        z-index: 1;
-    }
-
-    #tituloObjetivo:hover {
-        top: 110px;
-    }
-
-    #textObjetivo {
-        color: aliceblue;
-        font-size: 20px;
-    }
-
-    #textObjetivo:hover {
-        color: black;
-    }
-
-    .textDoObjetivo {
-        width: 800px;
-        height: 300px;
-        color: black;
-        position: relative;
-        top: 110px;
-        left: 100px;
-        text-align: center;
-        transition: all 0.5s;
-    } */
 
 #divSobrePokemon {
     width: 800px;
