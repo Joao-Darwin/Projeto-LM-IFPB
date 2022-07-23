@@ -274,4 +274,34 @@ body {
         top: 14%;
         left: 14%;
     }
+
+    /* Menu */
+    #menuOpcap {
+        width: 9.5%;
+        height: 55px;
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 89%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    #menuOpcap:hover {
+        background-color: #5AFF2F;
+    }
+
+    #imgMenu {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 25%;
+    }
+
+    main {
+        display: inline-block;
+        margin-top: 15.5%;
+        padding: 15px;
+        position: relative;
+    }
 }
