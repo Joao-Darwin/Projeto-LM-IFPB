@@ -7,7 +7,6 @@ body {
 }
 
 .link {
-    position: relative;
     color: white;
     text-decoration: none;
 }
@@ -15,6 +14,7 @@ body {
 .text {
     position: relative;
     top: 9px;
+    font-size: clamp(8px, 5vw, 16.5px);
 }
 
 #menuPrincipal {
@@ -32,33 +32,29 @@ body {
 }
 
 #home {
-    width: 6%;
+    width: 7.5%;
     height: 60px;
     border-right: 2px solid white;
     border-left: 2px solid white;
     background-color: #5AFF2F;
     position: relative;
     top: 0px;
-    left: 35px;
-    padding-left: 3px;
-    padding-right: 3px;
-    transition: all 0.5s;
-}
-
-#home:hover {
-    background-color: #5AFF2F;
+    left: 2.6%;
+    padding-left: 0.1%;
+    padding-right: 0.1%;
 }
 
 .opcaoMenu {
-    width: 7.5%;
+    width: 8.5%;
     height: 60px;
     border-right: 2px solid white;
+    border-left: 2px solid white;
     background-color: transparent;
     position: relative;
     top: 0px;
-    left: 35px;
-    padding-left: 3px;
-    padding-right: 3px;
+    left: 2.6%;
+    padding-left: 0.2%;
+    padding-right: 0.1%;
     transition: all 0.5s;
 }
 
@@ -67,96 +63,215 @@ body {
 }
 
 .imgOpcaoMenu {
-    width: 32px;
-    height: 32px;
+    width: 30%;
+    height: 60%;
     float: left;
     position: relative;
-    top: 15px;
+    top: 20%;
 }
 
 #menuOpcap {
-    width: 58px;
+    width: 5%;
     height: 60px;
     background-color: transparent;
-    position: relative;
+    position: absolute;
     top: 0px;
-    left: 844px;
-    padding-right: 3px;
+    left: 90%;
     transition: all 0.5s;
     z-index: 2;
 }
 
 #menuOpcap:hover {
     background-color: #5AFF2F;
-    height: 65px;
 }
 
 #imgMenu {
-    width: 32px;
-    height: 32px;
-    float: right;
+    width: 60%;
+    height: 60%;
     position: relative;
-    top: 15px;
-    right: 10px;
-}
-
-#divText1 {
-    width: 1290px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.452);
-    border: 2px solid transparent;
-    position: relative;
-    top: 170px;
-    left: 25px;
-    padding: 0px 5px;
-    font-size: 15px;
-}
-
-#autores {
-    position: relative;
-    top: 550px;
-    text-align: center;
+    top: 25%;
 }
 
 #divSobrePokemon {
-    width: 800px;
+    width: 70%;
     height: auto;
     position: relative;
     top: 100px;
-    left: 275px;
+    left: 16%;
     border: 1px none black;
 }
 
 .tituloPokemon {
     color: black;
-    font-size: 35px;
+    font-size: clamp(8px, 5vw, 35px);
     font-weight: bolder;
     text-align: center;
 }
 
 .subTituloPokemon {
     color: black;
-    font-size: 25px;
+    font-size: clamp(8px, 5vw, 25px);
     font-weight: bolder;
     text-align: center;
 }
 
 .textoPokemon {
     color: black;
-    font-size: 20px;
+    font-size: clamp(8px, 5vw, 20px);
     font-weight: normal;
     text-align: justify;
 }
 
 .imgPokemon {
-    width: 800px;
+    width: 85%;
     height: auto;
     object-fit: cover;
-    margin: 40px 0px 100px 0px;
+    margin: 2% 0px 6% 0px;
     border-radius: 5px;
     transition: all 0.3s;
 }
 
 .imgPokemon:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+}
+
+/* Tablet */
+@media screen and (max-width: 1147px) {
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .text {
+        position: absolute;
+        font-size: clamp(1%, 5vw, 100%);
+        top: 70%;
+        left: 27%;
+        margin: auto;
+    }
+
+    #menuPrincipal {
+        width: 100%;
+        height: 60px;
+        border: 0px solid #5AFF2F;
+        border-bottom: 7px solid #5AFF2F;
+        background-color: #000000;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+        z-index: 2;
+    }
+
+    #home {
+        width: 7.5%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: #5AFF2F;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+    }
+
+    #menuOpcap {
+        width: 7.5%;
+        height: 60px;
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 90%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    .opcaoMenu {
+        width: 10.9%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+        transition: all 0.5s;
+        align-items: center;
+    }
+
+    .opcaoMenu:hover {
+        background-color: #5AFF2F;
+    }
+
+    .imgOpcaoMenu {
+        width: 35%;
+        height: 60%;
+        position: absolute;
+        bottom: 90%;
+        left: 34%;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 636px) {
+
+    .link {
+        color: transparent;
+        text-decoration: none;
+    }
+
+    #menuPrincipal {
+        width: 100%;
+        height: 9%;
+        border: 0px solid #5AFF2F;
+        border-bottom: 7px solid #5AFF2F;
+        background-color: #000000;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+        z-index: 2;
+    }
+
+    #home {
+        width: 10.9%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: #5AFF2F;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+    }
+
+    .opcaoMenu {
+        width: 10.9%;
+        height: 55px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        transition: all 0.5s;
+        align-items: center;
+    }
+
+    .opcaoMenu:hover {
+        background-color: #5AFF2F;
+    }
+
+    .imgOpcaoMenu {
+        width: 65%;
+        height: 65%;
+        position: absolute;
+        top: 14%;
+        left: 14%;
+    }
 }
