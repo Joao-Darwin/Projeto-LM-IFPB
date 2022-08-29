@@ -1,0 +1,307 @@
+body {
+    background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png");
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.text {
+    position: relative;
+    top: 9px;
+    font-size: clamp(8px, 5vw, 16.5px);
+}
+
+#menuPrincipal {
+    width: 100%;
+    height: 60px;
+    border: 0px solid #004BA8;
+    border-bottom: 7px solid #004BA8;
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    text-align: center;
+    z-index: 2;
+}
+
+#home {
+    width: 7.5%;
+    height: 60px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    background-color: #004BA8;
+    position: relative;
+    top: 0px;
+    left: 2.6%;
+    padding-left: 0.1%;
+    padding-right: 0.1%;
+}
+
+.opcaoMenu {
+    width: 8.5%;
+    height: 60px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    left: 2.6%;
+    padding-left: 0.2%;
+    padding-right: 0.1%;
+    transition: all 0.5s;
+}
+
+.opcaoMenu:hover {
+    background-color: #004BA8;
+}
+
+.imgOpcaoMenu {
+    width: 30%;
+    height: 60%;
+    float: left;
+    position: relative;
+    top: 20%;
+}
+
+#menuOpcap {
+    width: 5%;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 90%;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+#menuOpcap:hover {
+    background-color: #004BA8;
+}
+
+#imgMenu {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 25%;
+}
+
+#divSobrePokemon {
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: 100px;
+    left: 16%;
+    border: 1px none black;
+}
+
+.tituloPokemon {
+    color: black;
+    font-size: clamp(8px, 5vw, 35px);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.subTituloPokemon {
+    color: black;
+    font-size: clamp(8px, 5vw, 25px);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.textoPokemon {
+    color: black;
+    font-size: clamp(8px, 5vw, 20px);
+    font-weight: normal;
+    text-align: justify;
+}
+
+.imgPokemon {
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    margin: 2% 0px 6% 0px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.imgPokemon:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+}
+
+/* Tablet */
+@media screen and (max-width: 1147px) {
+
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .text {
+        position: absolute;
+        font-size: clamp(1%, 5vw, 100%);
+        top: 70%;
+        left: 27%;
+        margin: auto;
+    }
+
+    #menuPrincipal {
+        width: 100%;
+        height: 60px;
+        border: 0px solid #004BA8;
+        border-bottom: 7px solid #004BA8;
+        background-color: #000000;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+        z-index: 2;
+    }
+
+    #home {
+        width: 7.5%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: #004BA8;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+    }
+
+    #menuOpcap {
+        width: 7.5%;
+        height: 60px;
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 90%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    .opcaoMenu {
+        width: 10.9%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+        transition: all 0.5s;
+        align-items: center;
+    }
+
+    .opcaoMenu:hover {
+        background-color: #004BA8;
+    }
+
+    .imgOpcaoMenu {
+        width: 35%;
+        height: 60%;
+        position: absolute;
+        bottom: 90%;
+        left: 34%;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 636px) {
+
+    .link {
+        color: transparent;
+        text-decoration: none;
+    }
+
+    #menuPrincipal {
+        width: 100%;
+        height: 9%;
+        border: 0px solid #004BA8;
+        border-bottom: 7px solid #004BA8;
+        background-color: #000000;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+        z-index: 2;
+    }
+
+    #home {
+        width: 10.9%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: #004BA8;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+    }
+
+    .opcaoMenu {
+        width: 10.9%;
+        height: 55px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        transition: all 0.5s;
+        align-items: center;
+    }
+
+    .opcaoMenu:hover {
+        background-color: #004BA8;
+    }
+
+    .imgOpcaoMenu {
+        width: 65%;
+        height: 65%;
+        position: absolute;
+        top: 14%;
+        left: 14%;
+    }
+
+    /* Menu */
+    #menuOpcap {
+        width: 9.5%;
+        height: 55px;
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 89%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    #menuOpcap:hover {
+        background-color: #004BA8;
+    }
+
+    #imgMenu {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 25%;
+    }
+
+    main {
+        display: inline-block;
+        margin-top: 15.5%;
+        padding: 15px;
+        position: relative;
+    }
+}
