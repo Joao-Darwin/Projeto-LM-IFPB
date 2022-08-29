@@ -3,118 +3,112 @@ body {
     color: white;
     font-family: 'Anton', sans-serif;
     font-weight: bold;
-}
-
-/* Menu */
-.menuOculto {
-    width: 0%;
-    height: 100%;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #000000;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 15px;
-}
-
-.menuOculto a {
-    padding: 18px 8px 8px 60px;
-    position: relative;
-    top: 7%;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.menuOculto a:hover {
-    color: #BC1D1D;
-}
-
-.menuOculto p {
-    padding: 1px 8px 8px 60px;
-    top: 0%;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.menuOculto p:hover {
-    color: #BC1D1D;
-}
-
-.btnFechar {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.menuSelecionado {
-    border-left: 5px solid #BC1D1D;
-}
-
-#principal {
-    background-color: #0000003d;
-    width: 26px;
-    height: 26px;
-    border-radius: 250px;
-    color: #000000;
-    padding: 16px;
-    position: absolute;
-    top: 43px;
-    left: 74px;
-    z-index: 1;
-    transition: 0.5s;
-}
-
-#principal:hover {
-    background-color: #00000010;
-}
-
-.imgsMenu {
-    width: 15%;
-    height: 5%;
-    float: left;
-    position: relative;
-    top: 8%;
-    left: 5%;
-}
-
-/* Pokédex */
-.textoPokedex {
-    position: absolute;
-    font-size: clamp(1%, 5vw, 100%);
-    top: 70%;
-    left: 3%;
-    margin: auto;
-}
-
-.text {
-    position: absolute;
-    font-size: clamp(1%, 5vw, 100%);
-    top: 70%;
-    left: 20%;
-    margin: auto;
-}
-
-main {
-    display: inline-block;
-    margin-top: 3%;
-    padding: 15px;
-    position: relative;
     text-align: center;
 }
 
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.textoPokedex {
+    position: relative;
+    top: 9px;
+    font-size: clamp(8px, 5vw, 16.5px);
+}
+
+.text {
+    position: relative;
+    top: 9px;
+    font-size: clamp(8px, 5vw, 16.5px);
+}
+
+#menuPrincipal {
+    width: 100%;
+    height: 60px;
+    border: 0px solid #BC1D1D;
+    border-bottom: 7px solid #BC1D1D;
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    text-align: center;
+    z-index: 2;
+}
+
+.opcaoMenu {
+    width: 8.5%;
+    height: 60px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    position: relative;
+    top: 0px;
+    left: 2.6%;
+    padding-left: 0.2%;
+    padding-right: 0.1%;
+    transition: all 0.5s;
+}
+
+.opcaoMenu:hover {
+    background-color: #BC1D1D;
+}
+
+.opcaoMarcada {
+    width: 7.5%;
+    height: 60px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    background-color: #BC1D1D;
+    position: relative;
+    top: 0px;
+    left: 2.6%;
+    padding-left: 0.1%;
+    padding-right: 0.1%;
+}
+
+.imgOpcaoMenu {
+    width: 30%;
+    height: 60%;
+    float: left;
+    position: relative;
+    top: 20%;
+}
+
+/* Menu */
+#menuOpcap {
+    width: 5%;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 90%;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+#menuOpcap:hover {
+    background-color: #BC1D1D;
+}
+
+#imgMenu {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 25%;
+}
+
+/* Pokédex */
+main {
+    display: inline-block;
+    margin-top: 8.5%;
+    padding: 15px;
+    position: relative;
+}
+
 .pokedex {
-    width: 90%;
+    width: 75%;
     max-width: 425px;
 }
 
@@ -142,7 +136,7 @@ main {
 
 .form {
     position: absolute;
-    width: 50%;
+    width: 45%;
     top: 65%;
     left: 25.5%;
 }
@@ -163,14 +157,14 @@ main {
     position: absolute;
     bottom: 10%;
     left: 50%;
-    width: 55%;
+    width: 45%;
     transform: translate(-57%, 0);
     display: flex;
     gap: 20px;
 }
 
 .button {
-    width: 55%;
+    width: 50%;
     padding: 4%;
     border: 2px solid #000000;
     border-radius: 5px;
@@ -184,4 +178,190 @@ main {
 .button:active {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1292px) {
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+
+    .textoPokedex {
+        position: absolute;
+        font-size: clamp(1%, 5vw, 100%);
+        top: 70%;
+        left: 3%;
+        margin: auto;
+    }
+
+    .text {
+        position: absolute;
+        font-size: clamp(1%, 5vw, 100%);
+        top: 70%;
+        left: 20%;
+        margin: auto;
+    }
+
+    .opcaoMenu {
+        width: 8.5%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        padding-left: 0.2%;
+        padding-right: 0.1%;
+        transition: all 0.5s;
+    }
+
+    .opcaoMenu:hover {
+        background-color: #BC1D1D;
+    }
+
+    .opcaoMarcada {
+        width: 7.5%;
+        height: 60px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: #BC1D1D;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        padding-left: 0.1%;
+        padding-right: 0.1%;
+    }
+
+    .imgOpcaoMenu {
+        width: 45%;
+        height: 60%;
+        position: absolute;
+        left: 30%;
+    }
+
+    /* Menu */
+    #menuOpcap {
+        width: 7.5%;
+        height: 60px;
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 90%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    #menuOpcap:hover {
+        background-color: #BC1D1D;
+    }
+
+    #imgMenu {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .link {
+        color: transparent;
+        text-decoration: none;
+    }
+
+    .textoPokedex {
+        position: absolute;
+        font-size: clamp(1%, 5vw, 100%);
+        top: 70%;
+        left: 3%;
+        margin: auto;
+    }
+
+    .text {
+        position: absolute;
+        font-size: clamp(1%, 5vw, 100%);
+        top: 70%;
+        left: 20%;
+        margin: auto;
+    }
+
+    #menuPrincipal {
+        width: 100%;
+        height: 9%;
+        border: 0px solid #BC1D1D;
+        border-bottom: 7px solid #BC1D1D;
+        background-color: #000000;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .opcaoMenu {
+        width: 10.9%;
+        height: 55px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+        transition: all 0.5s;
+        align-items: center;
+    }
+
+    .opcaoMenu:hover {
+        background-color: #BC1D1D;
+    }
+
+    .opcaoMarcada {
+        width: 10.9%;
+        height: 55px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: #BC1D1D;
+        position: relative;
+        top: 0px;
+        left: 2.6%;
+    }
+
+    .imgOpcaoMenu {
+        width: 65%;
+        height: 60%;
+        position: absolute;
+        left: 15%;
+    }
+
+    /* Menu */
+    #menuOpcap {
+        width: 9.5%;
+        height: 55px;
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 89%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+
+    #menuOpcap:hover {
+        background-color: #BC1D1D;
+    }
+
+    #imgMenu {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 25%;
+    }
+
+    main {
+        display: inline-block;
+        margin-top: 15.5%;
+        padding: 15px;
+        position: relative;
+    }
 }

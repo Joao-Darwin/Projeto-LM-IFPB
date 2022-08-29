@@ -1,0 +1,187 @@
+body {
+    background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png");
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+
+/* Menu */
+.menuOculto {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+}
+
+.menuOculto a {
+    padding: 18px 8px 8px 60px;
+    position: relative;
+    top: 7%;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuOculto a:hover {
+    color: #BC1D1D;
+}
+
+.menuOculto p {
+    padding: 1px 8px 8px 60px;
+    top: 0%;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menuOculto p:hover {
+    color: #BC1D1D;
+}
+
+.btnFechar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menuSelecionado {
+    border-left: 5px solid #BC1D1D;
+}
+
+#principal {
+    background-color: #0000003d;
+    width: 26px;
+    height: 26px;
+    border-radius: 250px;
+    color: #000000;
+    padding: 16px;
+    position: absolute;
+    top: 43px;
+    left: 74px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#principal:hover {
+    background-color: #00000010;
+}
+
+.imgsMenu {
+    width: 15%;
+    height: 5%;
+    float: left;
+    position: relative;
+    top: 8%;
+    left: 5%;
+}
+
+/* Pokédex */
+.textoPokedex {
+    position: absolute;
+    font-size: clamp(1%, 5vw, 100%);
+    top: 70%;
+    left: 3%;
+    margin: auto;
+}
+
+.text {
+    position: absolute;
+    font-size: clamp(1%, 5vw, 100%);
+    top: 70%;
+    left: 20%;
+    margin: auto;
+}
+
+main {
+    display: inline-block;
+    margin-top: 3%;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.pokedex {
+    width: 90%;
+    max-width: 425px;
+}
+
+.pokemon__image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemon__data {
+    color: #aaa;
+    position: absolute;
+    font-weight: 600;
+    top: 52%;
+    left: 30%;
+    font-size: clamp(8px, 5vw, 20px);
+}
+
+.pokemon__name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 50%;
+    top: 65%;
+    left: 25.5%;
+}
+
+.input__search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 55%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 55%;
+    padding: 4%;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000000;
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    font-size: clamp(8px, 5vw, 0.8rem);
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
