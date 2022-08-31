@@ -161,7 +161,7 @@ body {
 .rodape {
     width: 100%;
     height: 250px;
-    position: relative;
+    position: absolute;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -174,13 +174,13 @@ body {
 .tituloRodape {
     text-align: left;
     position: relative;
-    left: 25%;
+    left: 10%;
 }
 
 .textoRodape {
-    text-align: left;
     position: relative;
     left: 0%;
+    display: flexbox;
 }
 
 /* Tablet */
