@@ -6,6 +6,20 @@ body {
     text-align: center;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #5AFF2F;
+    border-radius: 5px;
+    border: 3px solid #5AFF2F;
+}
+
 .link {
     color: white;
     text-decoration: none;
@@ -103,7 +117,7 @@ body {
     background-color: #000000;
     position: fixed;
     left: 0%;
-    top:0%;
+    top: 0%;
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 2;
@@ -114,7 +128,7 @@ body {
     padding: 18px 8px 20px 30px;
     position: relative;
     left: 0%;
-    top:10%;
+    top: 10%;
     z-index: 2;
     display: block;
     transition: 0.5s;

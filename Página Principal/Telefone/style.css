@@ -6,30 +6,9 @@ body {
     text-align: center;
 }
 
-body::-webkit-scrollbar {
-    width: 5px;
-}
-
-body::-webkit-scrollbar-track {
-    background: white;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #BC1D1D;
-    border-radius: 5px;
-    border: 3px solid #BC1D1D;
-}
-
 .link {
     color: white;
     text-decoration: none;
-}
-
-
-.textoPokedex {
-    position: relative;
-    top: 9px;
-    font-size: clamp(8px, 5vw, 16.5px);
 }
 
 .text {
@@ -41,8 +20,8 @@ body::-webkit-scrollbar-thumb {
 #menuPrincipal {
     width: 100%;
     height: 70px;
-    border: 0px solid #BC1D1D;
-    border-bottom: 7px solid #BC1D1D;
+    border: 0px solid #5AFF2F;
+    border-bottom: 7px solid #5AFF2F;
     background-color: #000000;
     position: fixed;
     top: 0px;
@@ -52,48 +31,65 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
 }
 
-.opcaoMenu {
-    width: 8.5%;
+#home {
+    width: 15.5%;
     height: 100%;
     border-right: 2px solid white;
     border-left: 2px solid white;
+    background-color: #5AFF2F;
     position: relative;
     top: 0px;
-    left: 15.1%;
+    left: 10.1%;
+    padding-left: 0.1%;
+    padding-right: 0.1%;
+    cursor: pointer;
+}
+
+.opcaoMenu {
+    width: 15.5%;
+    height: 100%;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    left: 10.1%;
     padding-left: 0.2%;
     padding-right: 0.1%;
+    cursor: pointer;
     transition: all 0.5s;
-    cursor:pointer;
 }
 
 .opcaoMenu:hover {
-    background-color: #BC1D1D;
-}
-
-.opcaoMarcada {
-    width: 7.5%;
-    height: 100%;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
-    background-color: #BC1D1D;
-    position: relative;
-    top: 0px;
-    left: 15.1%;
-    padding-left: 0.1%;
-    padding-right: 0.1%;
+    background-color: #5AFF2F;
 }
 
 .imgOpcaoMenu {
-    width: 30%;
+    width: 50%;
     height: 60%;
-    float: left;
     position: relative;
-    top: 20%;
+    top: 25%;
 }
 
-/* Menu */
+.opcaoMenu1 {
+    width: 50%;
+    height: 70px;
+    position: relative;
+    top: 0px;
+    left: 10%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.imgOpcaoMenu1 {
+    width: 52%;
+    height: 60%;
+    position: relative;
+    top: 25%;
+}
+
 #menuOpcap {
-    width: 3.5%;
+    width: 10.5%;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -105,12 +101,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* #menuOpcap:hover {
-    background-color: #BC1D1D;
+    background-color: #5AFF2F;
 } */
 
 #imgMenu {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     position: relative;
     top: 25%;
     transition: 0.3s;
@@ -134,18 +130,18 @@ body::-webkit-scrollbar-thumb {
     padding: 18px 8px 20px 30px;
     position: relative;
     left: 0%;
-    top: 10%;
+    top: 5%;
     z-index: 2;
     display: block;
     transition: 0.5s;
 }
 
 .menuOculto a:hover {
-    border-left: 3px solid #BC1D1D;
-    color: #BC1D1D;
+    border-left: 3px solid #5AFF2F;
+    color: #5AFF2F;
 }
 
-.lateralEsquerdaPreta {
+/* .lateralEsquerdaPreta {
     position: fixed;
     left: 0px;
     z-index: 1;
@@ -163,87 +159,50 @@ body::-webkit-scrollbar-thumb {
     width: 15%;
     height: 100%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.63)
-}
+} */
 
-/* Pokédex */
-main {
-    display: inline-block;
-    margin-top: 8.5%;
-    padding: 15px;
+#divSobrePokemon {
+    width: 90%;
+    height: auto;
     position: relative;
+    top: 100px;
+    left: 0%;
+    margin: auto;
+    border: 1px none black;
 }
 
-.pokedex {
-    width: 100%;
-    max-width: 425px;
+.tituloPokemon {
+    color: black;
+    font-size: clamp(8px, 5vw, 35px);
+    font-weight: bolder;
+    text-align: center;
 }
 
-.pokemon__image {
-    position: absolute;
-    bottom: 55%;
-    left: 50%;
-    transform: translate(-63%, 20%);
-    height: 18%;
+.subTituloPokemon {
+    color: black;
+    font-size: clamp(8px, 5vw, 25px);
+    font-weight: bolder;
+    text-align: center;
 }
 
-.pokemon__data {
-    color: #aaa;
-    position: absolute;
-    font-weight: 600;
-    top: 52%;
-    left: 30%;
+.textoPokemon {
+    color: black;
     font-size: clamp(8px, 5vw, 20px);
+    font-weight: normal;
+    text-align: justify;
 }
 
-.pokemon__name {
-    color: #3a444d;
-    text-transform: capitalize;
-}
-
-.form {
-    position: absolute;
-    width: 55%;
-    top: 65%;
-    left: 24.5%;
-}
-
-.input__search {
-    width: 100%;
-    padding: 4%;
-    outline: none;
-    border: 2px solid #333;
+.imgPokemon {
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    margin: 2% 0px 6% 0px;
     border-radius: 5px;
-    font-weight: 600;
-    color: #3a444d;
-    font-size: clamp(8px, 5vw, 1rem);
-    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    transition: all 0.3s;
 }
 
-.buttons {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    width: 60%;
-    transform: translate(-57%, 0);
-    display: flex;
-    gap: 20px;
-}
-
-.button {
-    width: 70%;
-    padding: 4%;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000000;
-    font-weight: 600;
-    color: white;
-    background-color: #444;
-    font-size: clamp(8px, 5vw, 0.8rem);
-}
-
-.button:active {
-    box-shadow: inset -4px 4px 0 #222;
-    font-size: 0.9rem;
+.imgPokemon:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
 }
 
 .rodape {
@@ -252,7 +211,7 @@ main {
     position: absolute;
     left: 0%;
     right: 0%;
-    margin-top: 10%;
+    margin-top: 20%;
     z-index: 1;
     background-color: #1f1f1f;
     color: white;
@@ -260,19 +219,20 @@ main {
 
 .divRodape {
     position: relative;
-    left: 25%;
-    width: 25%;
+    left: 0%;
+    width: 40%;
     height: 50%;
     top: -15px;
-    padding: 0px;
+    padding: 0px 10% 0px 0px;
     border-right: 3px solid #393a39;
     float: left;
 }
 
 .divRodape2 {
     position: relative;
-    left: 25%;
-    width: 25%;
+    /*right: 0%;*/
+    left: 10%;
+    width: 40%;
     height: 50%;
     top: -15px;
     padding: 0px;
