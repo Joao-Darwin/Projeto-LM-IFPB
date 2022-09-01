@@ -93,11 +93,41 @@ body {
     height: 65%;
     position: relative;
     top: 25%;
+    transition: 0.3s;
+}
+
+.menuOculto {
+    height: 100%;
+    width: 0%;
+    background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png");
+    background-color: #000000;
+    position: fixed;
+    left: 0%;
+    top:0%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.menuOculto a {
+    font-size: 20px;
+    padding: 18px 8px 20px 30px;
+    position: relative;
+    left: 0%;
+    top:10%;
+    z-index: 2;
+    display: block;
+    transition: 0.5s;
+}
+
+.menuOculto a:hover {
+    border-left: 3px solid #5AFF2F;
+    color: #5AFF2F;
 }
 
 .lateralEsquerdaPreta {
     position: fixed;
-    left: 0px;;
+    left: 0px;
     z-index: 1;
     background-color: #00000015;
     width: 15%;
@@ -107,7 +137,7 @@ body {
 
 .lateralDireitaPreta {
     position: fixed;
-    right: 0px;;
+    right: 0px;
     z-index: 1;
     background-color: #00000015;
     width: 15%;
@@ -164,27 +194,78 @@ body {
     position: absolute;
     left: 0%;
     right: 0%;
-    bottom: 0%;
-    margin-top: 100px;;
-    z-index: 0;
+    margin-top: 10%;
+    z-index: 1;
     background-color: #1f1f1f;
     color: white;
 }
 
-.tituloRodape {
-    text-align: left;
+.divRodape {
     position: relative;
-    left: 10%;
+    left: 25%;
+    width: 25%;
+    height: 50%;
+    top: -15px;
+    padding: 0px;
+    border-right: 3px solid #393a39;
+    float: left;
+}
+
+.divRodape2 {
+    position: relative;
+    left: 25%;
+    width: 25%;
+    height: 50%;
+    top: -15px;
+    padding: 0px;
+    float: left;
+}
+
+.tituloRodape {
+    position: relative;
 }
 
 .textoRodape {
     position: relative;
-    left: 0%;
-    display: flexbox;
+    margin-bottom: 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.textoRodape1 {
+    position: relative;
+    margin-bottom: -15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.textoRodape:hover {
+    color: #cac7c7;
+}
+
+.textoRodape1:hover {
+    color: #cac7c7;
+}
+
+@media screen and (max-width: 768px) {
+    .imgOpcaoMenu {
+        width: 45%;
+        height: 60%;
+        position: relative;
+        left: 25%;
+        bottom: 25%;
+    }
+
+    #imgMenu {
+        width: 95%;
+        height: 75%;
+        position: relative;
+        bottom: 25%;
+    }
 }
 
 /* Tablet */
-@media screen and (max-width: 1147px) {
+/* @media screen and (max-width: 1147px) {
 
     .link {
         color: white;
@@ -266,7 +347,7 @@ body {
 }
 
 /* Celular */
-@media screen and (max-width: 636px) {
+/* @media screen and (max-width: 636px) {
 
     .link {
         color: transparent;
@@ -324,7 +405,7 @@ body {
     }
 
     /* Menu */
-    #menuOpcap {
+/* #menuOpcap {
         width: 9.5%;
         height: 55px;
         background-color: transparent;
@@ -352,4 +433,4 @@ body {
         padding: 15px;
         position: relative;
     }
-}
+} */
