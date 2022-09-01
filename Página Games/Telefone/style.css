@@ -6,20 +6,6 @@ body {
     text-align: center;
 }
 
-body::-webkit-scrollbar {
-    width: 5px;
-}
-
-body::-webkit-scrollbar-track {
-    background: white;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #004BA8;
-    border-radius: 5px;
-    border: 3px solid #004BA8;
-}
-
 .link {
     color: white;
     text-decoration: none;
@@ -46,31 +32,32 @@ body::-webkit-scrollbar-thumb {
 }
 
 #home {
-    width: 7.5%;
+    width: 15.5%;
     height: 100%;
     border-right: 2px solid white;
     border-left: 2px solid white;
     background-color: #004BA8;
     position: relative;
     top: 0px;
-    left: 15.1%;
+    left: 10.1%;
     padding-left: 0.1%;
     padding-right: 0.1%;
+    cursor: pointer;
 }
 
 .opcaoMenu {
-    width: 8.5%;
+    width: 15.5%;
     height: 100%;
     border-right: 2px solid white;
     border-left: 2px solid white;
     background-color: transparent;
     position: relative;
     top: 0px;
-    left: 15.1%;
+    left: 10.1%;
     padding-left: 0.2%;
     padding-right: 0.1%;
-    transition: all 0.5s;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .opcaoMenu:hover {
@@ -78,15 +65,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 .imgOpcaoMenu {
-    width: 30%;
+    width: 50%;
     height: 60%;
-    float: left;
     position: relative;
-    top: 20%;
+    top: 25%;
+}
+
+.opcaoMenu1 {
+    width: 50%;
+    height: 70px;
+    position: relative;
+    top: 0px;
+    left: 10%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.imgOpcaoMenu1 {
+    width: 52%;
+    height: 60%;
+    position: relative;
+    top: 25%;
 }
 
 #menuOpcap {
-    width: 3.5%;
+    width: 10.5%;
     height: 100%;
     background-color: transparent;
     position: absolute;
@@ -96,6 +99,10 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
     cursor: pointer;
 }
+
+/* #menuOpcap:hover {
+    background-color: #004BA8;
+} */
 
 #imgMenu {
     width: 65%;
@@ -120,10 +127,10 @@ body::-webkit-scrollbar-thumb {
 
 .menuOculto a {
     font-size: 20px;
-    padding: 18px 8px 35px 30px;
+    padding: 18px 8px 20px 30px;
     position: relative;
     left: 0%;
-    top: 10%;
+    top: 5%;
     z-index: 2;
     display: block;
     transition: 0.5s;
@@ -134,7 +141,7 @@ body::-webkit-scrollbar-thumb {
     color: #004BA8;
 }
 
-.lateralEsquerdaPreta {
+/* .lateralEsquerdaPreta {
     position: fixed;
     left: 0px;
     z-index: 1;
@@ -152,14 +159,15 @@ body::-webkit-scrollbar-thumb {
     width: 15%;
     height: 100%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.63)
-}
+} */
 
 #divSobrePokemon {
-    width: 68%;
+    width: 90%;
     height: auto;
     position: relative;
     top: 100px;
-    left: 16%;
+    left: 0%;
+    margin: auto;
     border: 1px none black;
 }
 
@@ -203,7 +211,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: 0%;
     right: 0%;
-    margin-top: 10%;
+    margin-top: 20%;
     z-index: 1;
     background-color: #1f1f1f;
     color: white;
@@ -211,19 +219,20 @@ body::-webkit-scrollbar-thumb {
 
 .divRodape {
     position: relative;
-    left: 25%;
-    width: 25%;
+    left: 0%;
+    width: 40%;
     height: 50%;
     top: -15px;
-    padding: 0px;
+    padding: 0px 10% 0px 0px;
     border-right: 3px solid #393a39;
     float: left;
 }
 
 .divRodape2 {
     position: relative;
-    left: 25%;
-    width: 25%;
+    /*right: 0%;*/
+    left: 10%;
+    width: 40%;
     height: 50%;
     top: -15px;
     padding: 0px;
@@ -254,21 +263,4 @@ body::-webkit-scrollbar-thumb {
 
 .textoRodape1:hover {
     color: #cac7c7;
-}
-
-@media screen and (max-width: 768px) {
-    .imgOpcaoMenu {
-        width: 45%;
-        height: 60%;
-        position: relative;
-        left: 25%;
-        bottom: 25%;
-    }
-
-    #imgMenu {
-        width: 95%;
-        height: 75%;
-        position: relative;
-        bottom: 25%;
-    }
 }
