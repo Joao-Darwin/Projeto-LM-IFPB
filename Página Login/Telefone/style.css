@@ -1,5 +1,4 @@
 body {
-    background-repeat: no-repeat;
     background-image: url("https://images2.alphacoders.com/116/thumb-1920-1160159.png");
     color: #999999;
     font-family: 'Anton', sans-serif;
@@ -39,13 +38,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .divLogin{
-    width: 50%;
+    width: 82%;
     height: auto;
     background-color: white;
     position: absolute;
     top: 5%;
-    left: 25%;
-    border: 2px solid none;
+    left: 10%;
+    border: 0px solid none;
     border-radius: 10px;
     display: inline-flex;
 }
@@ -54,7 +53,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     padding: 0px;
     top: 0px;
-    border: 1px solid none;
 }
 
 .subTituloLogin{
@@ -63,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .loginMenu{
-    width: 93.4%;
+    width: 87%;
     height: auto;
     background-color: #F2F2F2;
     padding: 20px 15px 20px 30px;
@@ -77,18 +75,12 @@ body::-webkit-scrollbar-thumb {
 .loginMenu a{
     position: relative;
     top: -5%;
-    font-size: 15px;
 }
 
 .textoInput{
     position: relative;
     top:-5%;
     float: left;
-    transition: all 0.5s;
-}
-
-.textoInput:hover{
-    color: black;
 }
 
 .inputTexto{
@@ -100,11 +92,6 @@ body::-webkit-scrollbar-thumb {
     display: block;
     position: relative;
     left: 15%;
-    transition: all 0.5s;
-}
-
-.inputTexto:hover{
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.76);
 }
 
 .button{
@@ -124,7 +111,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #388d45;
 }
 
-/* .divImagemLogin{
+.divImagemLogin{
     width: 75%;
     border: 1px solid none;
 }
@@ -139,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 
 .imagemLogin:hover {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.664);
-} */
+}
 
 .lateralEsquerdaPreta {
     position: fixed;
@@ -169,7 +156,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 74.5%;
+    top: 100%;
     z-index: 1;
     background-color: #1f1f1f;
     color: white;
@@ -177,19 +164,20 @@ body::-webkit-scrollbar-thumb {
 
 .divRodape {
     position: relative;
-    left: 25%;
-    width: 25%;
+    left: 0%;
+    width: 40%;
     height: 50%;
     top: -15px;
-    padding: 0px;
+    padding: 0px 10% 0px 0px;
     border-right: 3px solid #393a39;
     float: left;
 }
 
 .divRodape2 {
     position: relative;
-    left: 25%;
-    width: 25%;
+    /*right: 0%;*/
+    left: 10%;
+    width: 40%;
     height: 50%;
     top: -15px;
     padding: 0px;
@@ -223,23 +211,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 768px) {
-    .divLogin{
-        width: 80%;
-        height: auto;
-        background-color: white;
-        position: absolute;
-        top: 1%;
-        left: 12%;
-        border: 2px solid none;
-        border-radius: 10px;
-        display: inline-flex;
-    }
 
     .container1{
-        width: 98.5%;
+        width: 100%;
         padding: 0px;
         top: 0px;
-        border: 0px solid none;
+        border: 1px solid none;
     }
 
     .divImagemLogin{
