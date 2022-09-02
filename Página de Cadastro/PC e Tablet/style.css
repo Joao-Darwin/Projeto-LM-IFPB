@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     background-color: white;
     position: absolute;
-    top: 5%;
+    top: 20%;
     left: 22%;
     border: 2px solid none;
     border-radius: 10px;
@@ -65,10 +65,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .loginMenu{
-    width: 94%;
+    width: 95.5%;
     height: auto;
     background-color: #F2F2F2;
-    padding: 20px 15px 20px 30px;
+    padding: 15px 15px 15px 30px;
 }
 
 .loginMenu p{
@@ -230,7 +230,7 @@ body::-webkit-scrollbar-thumb {
         height: auto;
         background-color: white;
         position: absolute;
-        top: 1%;
+        top: 15%;
         left: 12%;
         border: 2px solid none;
         border-radius: 10px;
@@ -238,7 +238,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .container1{
-        width: 98.5%;
+        width: 96.5%;
         padding: 0px;
         top: 0px;
         border: 0px solid none;

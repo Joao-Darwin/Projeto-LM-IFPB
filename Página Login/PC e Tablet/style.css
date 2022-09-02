@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     background-color: white;
     position: absolute;
-    top: 5%;
+    top: 20%;
     left: 25%;
     border: 2px solid none;
     border-radius: 10px;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .loginMenu{
-    width: 93.4%;
+    width: 95.4%;
     height: auto;
     background-color: #F2F2F2;
     padding: 20px 15px 20px 30px;
@@ -76,8 +76,9 @@ body::-webkit-scrollbar-thumb {
 
 .loginMenu a{
     position: relative;
-    top: -5%;
+    left: -5px;
     font-size: 15px;
+    text-align: center;
 }
 
 .textoInput{
@@ -92,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .inputTexto{
-    width: 65%;
+    width: 45%;
     height: 40px;
     background-color: #1f1f1f;
     color:white;
@@ -169,7 +170,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 74.5%;
+    top: 100%;
     z-index: 1;
     background-color: #1f1f1f;
     color: white;
@@ -228,7 +229,7 @@ body::-webkit-scrollbar-thumb {
         height: auto;
         background-color: white;
         position: absolute;
-        top: 1%;
+        top: 15%;
         left: 12%;
         border: 2px solid none;
         border-radius: 10px;
@@ -236,7 +237,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .container1{
-        width: 98.5%;
+        width: 96.6%;
         padding: 0px;
         top: 0px;
         border: 0px solid none;

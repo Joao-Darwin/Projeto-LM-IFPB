@@ -214,7 +214,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 370%;
+    top: 270%;
     z-index: 3;
     background-color: #1f1f1f;
     color: white;
